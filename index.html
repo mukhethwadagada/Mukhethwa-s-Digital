@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukhethwa's Digital - Web & Poster Services</title>
+    <meta name="google-site-verification" content="mhNTF3qPxGeUyh9jHKnSVv_4EbrMjmo-OvxrNAlPhd4" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; 
+            color: #334155; 
+            overflow-x: hidden; 
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+            border-color: #6366f1;
+        }
+
+        
+        .animate-on-load, .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+       
+        .animate-on-load.is-visible, .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+      
+        .hero-title { transition-delay: 0.1s; }
+        .hero-text { transition-delay: 0.3s; }
+        .hero-button { transition-delay: 0.5s; }
+
+     
+        .service-card:nth-child(1) { transition-delay: 0s; }
+        .service-card:nth-child(2) { transition-delay: 0.2s; }
+        .service-card:nth-child(3) { transition-delay: 0.4s; }
+        .service-card:nth-child(4) { transition-delay: 0.6s; }
+
+        
+        .animate-header-item {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-header-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .animate-header-item:nth-child(1) { transition-delay: 0.2s; }
+        .animate-header-item:nth-child(2) { transition-delay: 0.4s; }
+        .animate-header-item:nth-child(3) { transition-delay: 0.6s; }
+
+        
+        .animate-footer-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-footer-text.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .footer-text-1 { transition-delay: 0.1s; }
+        .footer-text-2 { transition-delay: 0.3s; }
+        .footer-icons { transition-delay: 0.5s; } 
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold mb-2 md:mb-0 animate-on-load hero-title">Mukhethwa's Digital</h1>
+            <nav class="flex items-center space-x-6">
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li class="animate-header-item"><a href="#services" class="hover:text-purple-200 transition duration-300">Services</a></li>
+                    <li class="animate-header-item"><a href="#request-form" class="hover:text-purple-200 transition duration-300">Request Service</a></li>
+                </ul>
+                <a href="mailto:info@mukhethwadigital@gmail.com" class="bg-white text-indigo-600 hover:bg-indigo-100 p-2 rounded-full shadow-md transition duration-300 transform hover:scale-105 animate-header-item" aria-label="Email Mukhethwa Digital">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 4v7a2 2 0 002 2h14a2 2 0 002-2v-7m-18 0l-1 1a2 2 0 000 2l1 1m18-4l1 1a2 2 0 010 2l-1 1m-18 0h18" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-20 text-center bg-white shadow-md mx-auto my-8 rounded-xl max-w-6xl px-4">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold text-indigo-700 mb-6 animate-on-load hero-title">Your Vision, Our Digital Craft.</h2>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-8 animate-on-load hero-text">
+                Welcome to Mukhethwa's Digital, where creativity meets code to bring your ideas to life.
+                We specialize in crafting stunning web experiences and impactful poster designs that captivate your audience.
+            </p>
+            <a href="#request-form" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-on-load hero-button">
+                Request a Service Today
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-50 mx-auto my-8 rounded-xl max-w-6xl px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-700 mb-12 animate-on-scroll">Our Services</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-on-scroll service-card">
+                    <img src="https://placehold.co/600x400/818cf8/ffffff?text=Web+Design" alt="Web Design Services" class="w-full h-64 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-3xl font-semibold text-purple-700 mb-4">Web Services</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        From elegant portfolio sites to robust e-commerce platforms, we build responsive,
+                        user-friendly websites that look great on any device. We focus on clean code,
+                        intuitive navigation, and compelling design to ensure your online presence stands out.
+                    </p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Custom Website Design</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Responsive Development</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>E-commerce Solutions</li>
+                    </ul>
+                    <a href="#request-form" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300">
+                        Get a Website
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300 animate-on-scroll service-card">
+                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Poster+Design" alt="Poster Design Services" class="w-full h-64 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-3xl font-semibold text-indigo-700 mb-4">Poster Design</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Make a bold statement with custom-designed posters that grab attention.
+                        Whether for promotions, branding, our designs are creative,
+                        impactful, and tailored to your message. We ensure your posters are
+                        visually compelling and effectively communicate your story.
+                    </p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Promotional Posters</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Branding & Awareness</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Print-Ready Files</li>
+                    </ul>
+                    <a href="#request-form" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300">
+                        Order a Poster
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="request-form" class="py-16 bg-white shadow-md mx-auto my-8 rounded-xl max-w-6xl px-4 animate-on-scroll">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-indigo-700 text-center mb-12">Request Our Services</h2>
+            <form id="serviceRequestForm" class="max-w-xl mx-auto p-8 bg-gray-50 rounded-xl shadow-lg">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 text-lg font-medium mb-2">Your Name</label>
+                    <input type="text" id="name" name="user_name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="John Doe" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-lg font-medium mb-2">Your Email</label>
+                    <input type="email" id="email" name="user_email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="you@example.com" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="serviceType" class="block text-gray-700 text-lg font-medium mb-2">Service You Need</label>
+                    <select id="serviceType" name="service_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <option value="">-- Please select a service --</option>
+                        <option value="Web Design & Development">Web Design & Development</option>
+                        <option value="E-commerce Website">E-commerce Website</option>
+                        <option value="Promotional Poster Design">Promotional Poster Design</option>
+                        <option value="Branding Poster Design">Branding Poster Design</option>
+                        <option value="Other">Other (Please specify in message)</option>
+                    </select>
+                </div>
+
+                <div class="mb-8">
+                    <label for="message" class="block text-gray-700 text-lg font-medium mb-2">Your Message / Project Details</label>
+                    <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="Tell us about your project, your goals, and any specific requirements..." required></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Send Request
+                </button>
+
+                <div id="submissionMessage" class="mt-6 p-4 rounded-lg hidden" role="alert"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 rounded-t-xl mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="animate-footer-text footer-text-1">&copy; 2025 Mukhethwa Digital. All rights reserved.</p>
+            <p class="mt-2 text-sm animate-footer-text footer-text-2">Crafted with passion by Mukhethwa.</p>
+
+            <div class="flex justify-center space-x-6 mt-4 animate-footer-text footer-icons">
+                <a href="https://wa.me/27760907706" target="_blank" class="text-white hover:text-green-500 transition duration-300 transform hover:scale-110" aria-label="Connect on WhatsApp">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mukhethwa-dagada-7336a4249/" target="_blank" class="text-white hover:text-blue-600 transition duration-300 transform hover:scale-110" aria-label="Connect on LinkedIn">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="mailto:info@mukhethwadigital@gmail.com" class="text-white hover:text-red-500 transition duration-300 transform hover:scale-110" aria-label="Send us an email">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
+                <a href="tel:+27760907706" class="text-white hover:text-blue-400 transition duration-300 transform hover:scale-110" aria-label="Call us">
+                    <i class="fas fa-phone text-3xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   
+    (function() {
+        emailjs.init({
+            publicKey: "DmyjLz7uCPrvyAvKz", 
+        });
+    })();
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('serviceRequestForm');
+        const submissionMessage = document.getElementById('submissionMessage');
+
+       
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+         
+            submissionMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
+            submissionMessage.classList.add('bg-blue-100', 'text-blue-800');
+            submissionMessage.textContent = 'Sending your request... Please wait...';
+
+        
+            const currentTime = new Date().toLocaleString();
+            const commonParams = {
+                time: currentTime,
+             
+            };
+
+           
+            const serviceProviderPromise = emailjs.sendForm(
+                'service_oxovdtj',   
+                'template_hk7khmf',  
+                this,             
+                commonParams         
+            );
+
+        
+            const customerConfirmationPromise = emailjs.sendForm(
+                'service_oxovdtj',   
+                'template_elwbh4f',  
+                this,                
+                commonParams         
+            );
+
+            Promise.all([serviceProviderPromise, customerConfirmationPromise])
+                .then(() => {
+                    submissionMessage.classList.remove('bg-blue-100', 'text-blue-800');
+                    submissionMessage.classList.add('bg-green-100', 'text-green-800');
+                    submissionMessage.innerHTML = `Your request has been sent successfully! A confirmation has also been sent to your email.`;
+                    form.reset(); 
+                    setTimeout(() => {
+                        submissionMessage.classList.add('hidden');
+                    }, 10000); 
+                })
+                .catch((error) => {
+                    submissionMessage.classList.remove('bg-blue-100', 'text-blue-800');
+                    submissionMessage.classList.add('bg-red-100', 'text-red-800');
+                   
+                    submissionMessage.textContent = `There was an issue sending your request. Please try again or contact us directly. Error details: ${error.text || error}`;
+                    console.error("EmailJS Error:", error);
+                    setTimeout(() => {
+                        submissionMessage.classList.add('hidden');
+                    }, 12000); 
+                });
+        });
+        const animateOnLoadElements = document.querySelectorAll('.animate-on-load, .animate-header-item');
+        animateOnLoadElements.forEach(element => {
+            setTimeout(() => {
+                element.classList.add('is-visible');
+            }, 100); 
+        });
+
+       
+        const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll, .animate-footer-text');
+
+        const observerOptions = {
+            root: null, 
+            rootMargin: '0px',
+            threshold: 0.1 
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+     
+        animateOnScrollElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+</body>
+</html>
